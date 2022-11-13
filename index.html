@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News HomePage</title>
+        <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body id="body">
+        
+        <header>
+            <div class="navbar">
+                <div class="icon">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" width="55">
+                    </a>
+                </div>
+
+                <div class="botao">
+                    <!-- Ele vai enviar um número positivio indicando que é pra abrir
+                    Se essa função enviar um número negativo é pra fechar-->
+                    <button type="button" class="botao-imagem-abrir" onclick="menu(1)">
+                        <img src="assets/images/icon-menu.svg">
+                    </button>
+                </div>
+                
+                <ul class="menu" id="local-menu">
+                    <li class="botao-fechar">
+                        <button type="button" onclick="menu(-1)" class="botao-imagem-fechar">
+                            <img src="assets/images/icon-menu-close.svg">
+                        </button>
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="responsive">
+                <section class="section-1">
+                    <div class="center">
+                        <div class="imagem">
+                            <picture>
+                                <source media="(min-width: 576px)" srcset="assets/images/image-web-3-desktop.jpg">
+                                <img src="assets/images/image-web-3-mobile.jpg" alt="Cubos coloridos" width="100%">
+                            </picture>
+                        </div>
+                        <div class="conteudo-section-1">
+                            <div class="section-1-titulo">
+                                <h2>
+                                    The Bright
+                                    Future of Web
+                                    3.0?
+                                </h2>
+                            </div>
+                            <div class="section-1-texto">
+                                <p>
+                                    We dive into the next evolution of the web that
+                                    claims to put the power of the platforms back
+                                    into the hands of the people. But is it really
+                                    fulfilling its promise?
+                                </p>
+                                <div class="centralizar-botao">
+                                    <button type="button" class="estilo-botao">READ MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-2">
+                    <div class="container">
+                        <div class="separacao">
+                            <h2 class="container-titulo">New</h2>
+                            <h4 class="container-subtitulo">Hydrogen VS Electric Cars</h4>
+                            <p class="container-texto">
+                                Will hydrogen-fueled cars ever catch up
+                                to EVs?
+                            </p>
+                            <div class="linha-separacao"></div>
+                        </div>
+                        <div class="separacao">
+                            <h4 class="container-subtitulo">The Downsides of Al Artistry</h4>
+                            <p class="container-texto">
+                                What are the possible adverse effects of
+                                on-demand Al image generation?
+                            </p>
+                            <div class="linha-separacao"></div>
+                        </div>
+                        <div class="separacao">
+                            <h4 class="container-subtitulo">Is VC Funding Drying Up?</h4>
+                            <p class="container-texto eliminando-margin">
+                                Private funding by VC firms is down 50%
+                                YOY. We take a look at what that means.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="section-3">
+                <div class="bloco-1">
+                    <img src="assets/images/image-retro-pcs.jpg" alt="Computador" width="100">
+                    <div class="conteudo">
+                        <h1>01</h1>
+                        <h3>Reviving Retro PCs</h3>
+                        <p>
+                            What happens when old PCs
+                            are given modern upgrades?
+                        </p>
+                    </div>
+                </div>
+                <div class="bloco-2">
+                    <img src="assets/images/image-top-laptops.jpg" alt="Teclado" width="100">
+                    <div class="conteudo">
+                        <h1>02</h1>
+                        <h3>Top 10 Laptops of 2022</h3>
+                        <p>
+                            Our best picks for various
+                            needs and budgets.
+                        </p>
+                    </div>
+                </div>
+                <div class="bloco-3">
+                    <img src="assets/images/image-gaming-growth.jpg" class="Controle de Xbox" width="100">
+                    <div class="conteudo">
+                        <h1>03</h1>
+                        <h3>The Growth of Gaming</h3>
+                        <p>
+                            How the pandemic has
+                            sparked fresh opportunities.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
